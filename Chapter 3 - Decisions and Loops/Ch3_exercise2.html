@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 3, Exercise 2</title>
+  </head>
+  <body>
+    <script>
+      var twelvesArray = [];
+      var i;
+      for (i = 0; i < 12; i++) {
+        twelvesArray[i] = 12 * (i+1);
+      }
+
+      for(var twelveX in twelvesArray){
+        document.write("12 x " + (parseInt(twelveX, 10) + 1) + " = " +twelvesArray[twelveX] + "<br/>");
+      }
+    </script>
+  </body>
+  </html>

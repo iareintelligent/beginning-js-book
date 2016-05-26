@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>.forEach() testing</title>
+</head>
+<body>
+  <script>
+  var nums = [1,2,3,4,5];
+  document.write("was: " + nums + "<br />");
+  var dbldNums = [];
+  function dblNums(value, index, array){
+    //dbldNums.push(value*2);
+    nums[index] = value*2;
+  }
+
+  nums.forEach(dblNums);
+  document.write("now: "+nums);
+  </script>
+</body>
+</html>
